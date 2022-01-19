@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_clone/screens/home_screen.dart';
 import 'package:youtube_clone/widgets/widgets.dart';
 
 class NavScreen extends StatefulWidget {
@@ -12,11 +13,7 @@ class _NavScreenState extends State<NavScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          CustomAppBar(),
-        ],
-      ),
+      body: HomeScreen(),
       bottomNavigationBar: CustomBottomNavBar(),
     );
   }
